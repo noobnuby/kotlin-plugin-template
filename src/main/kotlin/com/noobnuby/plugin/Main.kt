@@ -6,10 +6,10 @@ import org.bukkit.plugin.java.JavaPlugin
 import xyz.icetang.lib.kommand.kommand
 
 class Main : JavaPlugin() {
-    companion object { lateinit var INSTANCE: Main }
+    companion object { lateinit var instance: Main }
 
     override fun onEnable() {
-        INSTANCE = this
+        instance = this
 
         logger.info("Enable Plugin!")
 
