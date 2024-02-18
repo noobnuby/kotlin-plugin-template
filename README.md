@@ -5,6 +5,8 @@
 # Library
 
 * [Kommand](https://github.com/gooddltmdqls/kommand)
+* [Atem](https://github.com/NOOBNUBY/Atem)
+* [MC Server Luncher](https://github.com/monun/minecraft-server-launcher)
 
 # Configuration
 
@@ -13,16 +15,23 @@ gradle.properties
 ```gradle
 group=com.noobnuby.plugin (group)
 version=1.0.0 (ver)
-paper_version=1.20.2 (papermc ver)
+paper_version=1.20.4 (papermc ver)
 kommand_version=3.1.11 (kommand ver)
+atem_version=1.0.0 (atem ver)
 ```
 
 # Build
 
 * `./gradlew paperJar`
 * `Gradle -> Tasks -> other -> paperJar`
-* `./gradlew runServer`
-* `Gradle -> Tasks -> run paper -> runServer`
+
+# Run Server
+
+* `./start`
+
+### It's not working!
+
+* [READ](https://github.com/monun/minecraft-server-launcher/blob/master/README.md)
 
 # License
 
