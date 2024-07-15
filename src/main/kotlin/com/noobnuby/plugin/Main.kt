@@ -3,7 +3,7 @@ package com.noobnuby.plugin
 import com.noobnuby.plugin.commands.Hello
 import com.noobnuby.plugin.events.JoinQuit
 import org.bukkit.plugin.java.JavaPlugin
-import xyz.icetang.lib.kommand.kommand
+import xyz.icetang.lib.icemmand.icemmand
 
 class Main : JavaPlugin() {
     companion object { lateinit var instance: Main }
@@ -13,7 +13,7 @@ class Main : JavaPlugin() {
 
         logger.info("Enable Plugin!")
 
-        kommand {
+        icemmand {
             Hello.register(this)
         }
 
