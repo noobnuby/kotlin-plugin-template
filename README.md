@@ -15,6 +15,7 @@ gradle.properties
 group=com.noobnuby.plugin (group)
 version=1.0.0 (ver)
 paper_version=1.21 (papermc ver)
+icemmand_version=1.21+1.0.1 (icemmand ver)
 ```
 
 # Build
