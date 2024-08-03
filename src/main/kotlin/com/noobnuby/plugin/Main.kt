@@ -5,6 +5,7 @@ import com.noobnuby.plugin.commands.HelloBrigadier
 import com.noobnuby.plugin.events.Join
 import org.bukkit.plugin.java.JavaPlugin
 import xyz.icetang.lib.icemmand.icemmand
+import java.util.logging.Logger
 
 class Main : JavaPlugin() {
     companion object { lateinit var instance: Main }
