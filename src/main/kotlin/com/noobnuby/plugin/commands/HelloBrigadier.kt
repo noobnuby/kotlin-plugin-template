@@ -20,6 +20,8 @@ object HelloBrigadier {
                         Command.SINGLE_SUCCESS
                     }
                     .build(),
+                "send to player hello message",
+                listOf("hb")
             )
         }
     }
