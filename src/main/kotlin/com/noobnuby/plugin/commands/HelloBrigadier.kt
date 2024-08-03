@@ -5,7 +5,6 @@ import com.noobnuby.plugin.Main
 import io.papermc.paper.command.brigadier.Commands
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents
 import net.kyori.adventure.text.Component.text
-import org.bukkit.entity.Player
 
 @Suppress("UnstableApiUsage")
 object HelloBrigadier {
