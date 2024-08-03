@@ -6,6 +6,7 @@
 
 * [MC Server Luncher](https://github.com/monun/minecraft-server-launcher)
 * [Icemmand](https://github.com/gooddltmdqls/icemmand)
+* [Brigadier](https://github.com/Mojang/brigadier)
 
 # Configuration
 
@@ -33,4 +34,4 @@ icemmand_version=1.21+1.0.1 (icemmand ver)
     
 # License
 
-[GPL-3.0](https://github.com/NOOBNUBY/kotlin-plugin-template/blob/master/LICENSE)
+[MIT](https://github.com/NOOBNUBY/kotlin-plugin-template/blob/master/LICENSE)

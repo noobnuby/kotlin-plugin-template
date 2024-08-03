@@ -27,10 +27,6 @@ java {
 }
 
 tasks {
-    withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_21.toString()
-    }
-
     processResources {
         filesMatching("plugin.yml") {
             expand(project.properties)
