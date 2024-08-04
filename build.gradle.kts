@@ -42,8 +42,7 @@ tasks {
         doLast {
             copy {
                 from(archiveFile)
-                val plugins = File(rootDir, "run/plugins/")
-                into(if (File(plugins, archiveFileName.get()).exists()) plugins else plugins)
+                into(File(rootDir, "run/plugins/"))
             }
         }
     }
