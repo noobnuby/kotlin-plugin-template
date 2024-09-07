@@ -12,7 +12,7 @@ REPO_BRANCH="master"
 REPO_ROOT="$REPO_BASE_URL/$REPO_BRANCH"
 REPO_DEPLOY="$REPO_ROOT/deploy"
 
-PAPER_VERSION="1.21"
+PAPER_VERSION="1.21.1"
 ########################## Configurations ##########################
 ## Server directory name
 DIR="run"
