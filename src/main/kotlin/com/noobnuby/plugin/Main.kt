@@ -1,10 +1,8 @@
 package com.noobnuby.plugin
 
-import com.noobnuby.plugin.commands.Hello
 import com.noobnuby.plugin.commands.HelloBrigadier
 import com.noobnuby.plugin.events.Join
 import org.bukkit.plugin.java.JavaPlugin
-import xyz.icetang.lib.icemmand.icemmand
 
 class Main : JavaPlugin() {
     companion object { lateinit var instance: Main }
@@ -13,10 +11,6 @@ class Main : JavaPlugin() {
         instance = this
 
         logger.info("Enable Plugin!")
-
-        icemmand {
-            Hello.register(this)
-        }
 
         HelloBrigadier.registerCommand()
 

@@ -2,15 +2,15 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.0.0"
-    id("com.gradleup.shadow") version "8.3.0"
+    kotlin("jvm") version "2.1.0"
+	id("com.gradleup.shadow") version "9.0.0-beta4"
+	id("xyz.jpenilla.run-paper") version "2.3.1"
 }
 
 group = property("group")!!
 version = property("version")!!
 
 val paper_version: String by project
-val icemmand_version: String by project
 
 repositories {
     mavenCentral()
@@ -22,7 +22,6 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
-    implementation("xyz.icetang.lib:icemmand-api:${icemmand_version}")
     compileOnly("io.papermc.paper:paper-api:${paper_version}-R0.1-SNAPSHOT")
 }
 
@@ -68,4 +67,8 @@ tasks {
             }
         }
     }
+
+	runServer {
+		minecraftVersion("1.21.4")
+	}
 }

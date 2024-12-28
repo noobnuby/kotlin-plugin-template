@@ -9,4 +9,3 @@ author: noobnuby
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:2.0.0
   - org.jetbrains.kotlin:kotlin-reflect:2.0.0
-  - xyz.icetang.lib:icemmand-core:1.21+1.0.1
