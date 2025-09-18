@@ -62,6 +62,9 @@ bin/
 /run/version_history.json
 /run/.console_history
 /run/whitelist.json
+/run/world
+/run/world_nether
+/run/world_the_end
 
 ### Mac OS ###
 .DS_Store

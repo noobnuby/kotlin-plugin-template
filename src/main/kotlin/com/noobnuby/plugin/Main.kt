@@ -1,7 +1,10 @@
 package com.noobnuby.plugin
 
+import com.noobnuby.plugin.commands.BaseCommand
 import com.noobnuby.plugin.commands.HelloBrigadier
 import com.noobnuby.plugin.events.Join
+import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents
+import org.bukkit.event.Listener
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
@@ -12,10 +15,22 @@ class Main : JavaPlugin() {
 
         logger.info("Enable Plugin!")
 
-        HelloBrigadier.registerCommand()
+		val commands = listOf<BaseCommand>(
+			HelloBrigadier()
+		)
 
-        server.pluginManager.apply {
-            registerEvents(Join(),this@Main)
-        }
+		val listeners = listOf<Listener>(
+			Join(),
+		)
+
+		commands.forEach { command ->
+			this.lifecycleManager.registerEventHandler(LifecycleEvents.COMMANDS) { commands ->
+				commands.registrar().register(command.create(), command.description, command.aliases)
+			}
+		}
+
+		listeners.forEach {
+			server.pluginManager.registerEvents(it, this)
+		}
     }
 }

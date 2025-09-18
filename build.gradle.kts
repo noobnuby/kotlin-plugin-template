@@ -60,15 +60,15 @@ tasks {
 
         from(sourceSets["main"].output)
 
-        doLast {
-            copy {
-                from(archiveFile)
-                into(File(rootDir, "run/plugins/"))
-            }
-        }
+//        doLast {
+//            copy {
+//                from(archiveFile)
+//                into(File(rootDir, "run/plugins/"))
+//            }
+//        }
     }
 
 	runServer {
-		minecraftVersion("1.21.4")
+		minecraftVersion("1.21.8")
 	}
 }
